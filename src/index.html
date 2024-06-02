@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product preview card component</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body class="bg-Cream font-Montserrat text-[14px] flex items-center justify-center min-h-screen box-border">
+    <div class="card-container  w-full max-w-xs sm:max-w-sm lg:max-w-[600px] bg-White shadow-lg flex flex-col lg:flex-row relative rounded-lg overflow-hidden">
+        <div class="image-content flex flex-1 ">
+            <img class="w-full block lg:hidden" src="./img/image-product-mobile.jpg" alt="">
+            <img class="w-full  hidden lg:block" src="./img/image-product-desktop.jpg" alt="">
+        </div>
+        <div class="text-content flex flex-1 flex-col box-border lg:max-w-[300px] p-[35px] gap-6">
+            <div class="heading flex flex-col gap-4">
+                <h2 class="tracking-[5px] uppercase text-Darkcyan font-medium">perfume</h2>
+                <h1 class="font-Fraunces font-bold text-4xl">Gabrielle Essence Eau De Parfum</h1>
+            </div>
+            <div class="paragraph">
+                A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+            </div>
+            <div class="price flex items-center gap-6 text-Darkcyan font-Fraunces">
+                <div class="correct-price font-extrabold text-[30px]">
+                    <p>$149.99</p>
+                </div>
+                <div class="discount-price line-through font-semibold">
+                    <p>$169.99</p>
+                </div>
+            </div>
+            <div class="addtocart ">
+                <a href="#" class="mx-w-[230px]  bg-Darkcyan hover:bg-Verydarkblue flex flex-row  justify-center items-center text-White rounded-lg gap-2 p-4 ">
+                    <img src="./img/icon-cart.svg" alt="">
+                    <button>                        
+                        Add to Cart
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
