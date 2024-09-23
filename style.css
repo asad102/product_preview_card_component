@@ -949,12 +949,28 @@ video {
   margin-top: 30px;
 }
 
+.box-border {
+  box-sizing: border-box;
+}
+
 .flex {
   display: flex;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-screen-mobile {
@@ -1023,11 +1039,6 @@ video {
 
 .p-300 {
   padding: 32px;
-}
-
-.py-\[10px\] {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .py-90 {
