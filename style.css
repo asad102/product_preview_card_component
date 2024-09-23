@@ -965,20 +965,12 @@ video {
   min-height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-full {
   width: 100%;
 }
 
 .max-w-screen-mobile {
   max-width: 343px;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .flex-row {
@@ -1111,6 +1103,12 @@ video {
   background-color: rgb(28 35 43 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 375px) {
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mt-150 {
     margin-top: 20px;
@@ -1120,16 +1118,14 @@ video {
     margin-top: 24px;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
   .md\:max-w-screen-card {
     max-width: 600px;
   }
+}
 
-  .md\:flex-row {
-    flex-direction: row;
+@media (min-width: 1280px) {
+  .xl\:w-1\/2 {
+    width: 50%;
   }
 }
 
