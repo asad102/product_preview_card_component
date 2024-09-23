@@ -6,38 +6,35 @@
     <title>product preview card component</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-Cream font-Montserrat text-[14px] flex items-center justify-center min-h-screen box-border">
-    <div class="card-container  w-full max-w-xs sm:max-w-sm lg:max-w-[600px] bg-White shadow-lg flex flex-col lg:flex-row relative rounded-lg overflow-hidden">
-        <div class="image-content flex flex-1 ">
-            <img class="w-full block lg:hidden" src="./img/image-product-mobile.jpg" alt="">
-            <img class="w-full  hidden lg:block" src="./img/image-product-desktop.jpg" alt="">
-        </div>
-        <div class="text-content flex flex-1 flex-col box-border lg:max-w-[300px] p-[35px] gap-6">
-            <div class="heading flex flex-col gap-4">
-                <h2 class="tracking-[5px] uppercase text-Darkcyan font-medium">perfume</h2>
-                <h1 class="font-Fraunces font-bold text-4xl">Gabrielle Essence Eau De Parfum</h1>
-            </div>
-            <div class="paragraph text-Darkcyan font-bold">
-                A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
-            </div>
-            <div class="price flex items-center gap-6 text-Darkcyan font-Fraunces">
-                <div class="correct-price font-extrabold text-[30px]">
-                    <p>$149.99</p>
+<body>
+    <main class="bg-Cream font-Montserrat text-base flex items-center justify-center min-h-screen">
+        <article class="bg-White md:max-w-screen-card max-w-screen-mobile rounded-10 overflow-hidden flex flex-col lg:flex-row">
+            <picture class="flex flex-1">
+                <source media="(min-width: 768px)" srcset="img/image-product-desktop.jpg"/>
+                <source media="(max-width: 768px)" srcset="img/image-product-mobile.jpg"/>
+                <img src="images/image-product-mobile.jpg"
+                     alt="produce image" class="object-cover"/>
+            </picture>
+            <div class="flex flex-1 flex-col p-300">
+                <span class="text-slogan text-Darkcyan">PERFUME</span>
+                <h1 class="font-Fraunces text-heading md:mt-150 mt-100">Gabrielle Essence Eau De Parfum</h1>
+                <p class="text-Darkcyan text-parag md:mt-200 mt-120">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <div class="flex items-center gap-200 text-Darkcyan font-Fraunces mt-250">
+                    <span class="text-heading">$149.99</span>  <span class="text-disc line-through"> $169.99</span>
                 </div>
-                <div class="discount-price line-through font-semibold">
-                    <p>$169.99</p>
+                <div class="addtocart mt-270">
+                    <a href="#" class="bg-Darkcyan hover:bg-Verydarkblue transition-all duration-300 flex flex-row  justify-center items-center text-White rounded-8 gap-100 py-90">
+                        <img src="./img/icon-cart.svg" alt="">
+                        <button>                        
+                            Add to Cart
+                        </button>
+                    </a>
                 </div>
             </div>
-            <div class="addtocart ">
-                <a href="#" class="mx-w-[230px]  bg-Darkcyan hover:bg-Verydarkblue flex flex-row  justify-center items-center text-White rounded-lg gap-2 p-4 ">
-                    <img src="./img/icon-cart.svg" alt="">
-                    <button>                        
-                        Add to Cart
-                    </button>
-                </a>
-            </div>
-        </div>
-    </div>
+
+        </article>
+    </main>
 </body>
 </html>
